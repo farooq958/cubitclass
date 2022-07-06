@@ -1,8 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
-import 'package:practiceapp/Models/student.dart';
-
-import '../../Models/Repostory/student_repo.dart';
+import 'package:practiceapp/Data/Models/student.dart';
+import 'package:practiceapp/Data/Repostory/student_repo.dart';
 
 part 'get_student_data_state.dart';
 

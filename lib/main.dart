@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:practiceapp/Cubits/StudentCubit/get_student_data_cubit.dart';
+import 'package:practiceapp/Cubits/cubit/emplyee_cubit_cubit.dart';
 import 'package:practiceapp/Screens/hom.dart';
+import 'package:practiceapp/Screens/homepage2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,12 +50,14 @@ class _StudentClassState extends State<StudentClass> {
     BlocProvider<GetStudentDataCubit>(
     create: (BuildContext context) => GetStudentDataCubit(),
     ),
+BlocProvider<EmplyeeCubitCubit>(
+    create: (BuildContext context) => EmplyeeCubitCubit(),
+    ),
 
      ],
-     child:  MaterialApp(
+     child:  const MaterialApp(
 
-        home: HomeClass()
-      ),
+        home: HomePge2(),),
     );
   }
 }

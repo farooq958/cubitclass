@@ -2,7 +2,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:http/http.dart' as http;
 import 'package:practiceapp/Cubits/StudentCubit/get_student_data_cubit.dart';
-import 'package:practiceapp/Models/student.dart';
+import 'package:practiceapp/Data/Models/student.dart';
 class  Repo{
 
   static Future<StudentData?> getStudentData()async{
