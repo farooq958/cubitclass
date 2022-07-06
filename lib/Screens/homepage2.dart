@@ -44,7 +44,7 @@ class _HomePge2State extends State<HomePge2> {
               );
             }
             if (state is EmplyeeCubitSocketException) {
-              return Center(
+              return const Center(
                 child: Text('No Internet'),
               );
             }
