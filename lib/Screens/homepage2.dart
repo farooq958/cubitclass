@@ -49,24 +49,23 @@ class _HomePge2State extends State<HomePge2> {
               );
             }
             if (state is EmplyeeCubitLoaded) {
-              return EmployeeController.demoClass.data.isEmpty
+              return EmployeeController.demoClass!.data.isEmpty
                   ? const Text("Empty")
                   : ListView.builder(
-                      itemCount: EmployeeController.demoClass.data.length,
+                      itemCount: EmployeeController.demoClass!.data.length,
                       itemBuilder: (context, index) {
                         return SizedBox(
                           height: 200,
                           child: Column(
                             children: [
                               Expanded(
-                                  child: Text(EmployeeController
-                                      .demoClass.data[index].name)),
+                                  child: Text(EmployeeController.demoClass!.data[index].name)),
                               const SizedBox(
                                 height: 10,
                               ),
                               Expanded(
                                   child: Text(EmployeeController
-                                      .demoClass.data[index].id
+                                      .demoClass!.data[index].id
                                       .toString()))
                             ],
                           ),
